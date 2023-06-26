@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keyboard</title>
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <textarea class="form-control" id="screen"></textarea>
+            </div>
+        </div>
+
+    </div><!--text area-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-9">
+                <div class="row">
+                    <div class="col-md-12">
+                        <button class="functionsv">esc</button>
+                        <button class="functionsv">f1</button>
+                        <button class="functionsv">f2</button>
+                        <button class="functionsv">f3</button>
+                        <button class="functionsv">f4</button>
+                        <button class="functionsv">f5</button>
+                        <button class="functionsv">f6</button>
+                        <button class="functionsv">f7</button>
+                        <button class="functionsv">f8</button>
+                        <button class="functionsv">f9</button>
+                        <button class="functionsv">f10</button>
+                        <button class="functionsv">f11</button>
+                        <button class="functionsv">f12</button>
+                        <button class="functionsv">prt sc</button>
+                        <button class="functionsv" onclick="delet()">delete</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <button class="esc" onclick="buttonClick('`')">`</button>
+                        <button class="numbers" onclick="buttonClick('1')">1</button>
+                        <button class="numbers" onclick="buttonClick('2')">2</button>
+                        <button class="numbers" onclick="buttonClick('3')">3</button>
+                        <button class="numbers" onclick="buttonClick('4')">4</button>
+                        <button class="numbers" onclick="buttonClick('5')">5</button>
+                        <button class="numbers" onclick="buttonClick('6')">6</button>
+                        <button class="numbers" onclick="buttonClick('7')">7</button>
+                        <button class="numbers" onclick="buttonClick('8')">8</button>
+                        <button class="numbers" onclick="buttonClick('9')">9</button>
+                        <button class="numbers" onclick="buttonClick('0')">0</button>
+                        <button class="numbers" onclick="buttonClick('-')">-</button>
+                        <button class="numbers" onclick="equalclick('=')">=</button>
+                        <button class="backspace" onclick="bspace()">&#8592; backspace</button>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <button class="tab" onclick="buttonClick('\t')">tab &#8646;</button>
+                        <button class="numbers" onclick="buttonClick('q')">Q</button>
+                        <button class="numbers" onclick="buttonClick('w')">W</button>
+                        <button class="numbers" onclick="buttonClick('e')">E</button>
+                        <button class="numbers" onclick="buttonClick('r')">R</button>
+                        <button class="numbers" onclick="buttonClick('t')">T</button>
+                        <button class="numbers" onclick="buttonClick('y')">Y</button>
+                        <button class="numbers" onclick="buttonClick('u')">U</button>
+                        <button class="numbers" onclick="buttonClick('i')">I</button>
+                        <button class="numbers" onclick="buttonClick('o')">O</button>
+                        <button class="numbers" onclick="buttonClick('p')">P</button>
+                        <button class="numbers" onclick="buttonClick('[')">[</button>
+                        <button class="numbers" onclick="buttonClick(']')">]</button>
+                        <button class="slash" onclick="buttonClick('')">\</button>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <button class="caps" onclick="caps('')">caps lock</button>
+                        <button class="numbers" onclick="buttonClick('a')">A</button>
+                        <button class="numbers" onclick="buttonClick('s')">S</button>
+                        <button class="numbers" onclick="buttonClick('d')">D</button>
+                        <button class="numbers" onclick="buttonClick('f')">F</button>
+                        <button class="numbers" onclick="buttonClick('g')">G</button>
+                        <button class="numbers" onclick="buttonClick('h')">H</button>
+                        <button class="numbers" onclick="buttonClick('j')">J</button>
+                        <button class="numbers" onclick="buttonClick('k')">K</button>
+                        <button class="numbers" onclick="buttonClick('l')">L</button>
+                        <button class="numbers" onclick="buttonClick(';')">;</button>
+                        <button class="numbers" onclick="buttonClick('')">'</button>
+                        <button class="enter" onclick="buttonClick('\n')"> &#8629; enter</button>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <button class="shift1" onclick="shiift()">shift &larr;</button>
+                        <button class="numbers" onclick="buttonClick('z')">Z</button>
+                        <button class="numbers" onclick="buttonClick('x')">X</button>
+                        <button class="numbers" onclick="buttonClick('c')">C</button>
+                        <button class="numbers" onclick="buttonClick('v')">V</button>
+                        <button class="numbers" onclick="buttonClick('b')">B</button>
+                        <button class="numbers" onclick="buttonClick('n')">N</button>
+                        <button class="numbers" onclick="buttonClick('m')">M</button>
+                        <button class="numbers" onclick="buttonClick(',')">,</button>
+                        <button class="numbers" onclick="buttonClick('.')">.</button>
+                        <button class="numbers" onclick="buttonClick('/')">/</button>
+                        <button class="shift2" onclick="shiift('')"> &larr; shift</button>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <button class="numbers">ctrl</button>
+                        <button class="numbers">fn</button>
+                        <button class="numbers"><i class="fa fa-windows"></i></button>
+                        <button class="numbers">alt</button>
+                        <button class="space" onclick="buttonClick(' ')"></button>
+                        <button class="numbers">alt</button>
+                        <button class="numbers">ctrl</button>
+                        <button class="numbers"> 
+                        </button>
+                        <button class="numbers">&#8743; &#8744;</button>
+                        <button class="numbers">></button>
+
+
+                    </div>
+                </div>
+            </div><!--for first column-->
+            <div class="col-md-3">
+                <div class="row">
+                    <div class="col-md-12">
+                        <button class="function1">home</button>
+                        <button class="function1">end</button>
+                        <button class="function1">pgup</button>
+                        <button class="function1">pgdn</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <button class="number" onclick="numlck('')">num </button>
+                        <button class="number" onclick="operClick('/')">/</button>
+                        <button class="number" onclick="operClick('*')">*</button>
+                        <button class="number" onclick="operClick('-')">-</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <button class="number" onclick="buttonclick('7')">7</button>
+                        <button class="number" onclick="buttonclick('8')">8</button>
+                        <button class="number" onclick="buttonclick('9')">9</button>
+
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <button class="number" onclick="buttonclick('4')">4</button>
+                        <button class="number" onclick="buttonclick('5')">5</button>
+                        <button class="number" onclick="buttonclick('6')">6</button>
+
+                    </div>
+                    <button class="plus" onclick="operClick('+')">+</button>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <button class="number" onclick="buttonclick('1')">1</button>
+                        <button class="number" onclick="buttonclick('2')">2</button>
+                        <button class="number" onclick="buttonclick('3')">3</button>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <button class="zero" onclick="buttonclick('0')">0</button>
+                        <button class="number" onclick="buttonclick('.')">.</button>
+
+
+                    </div>
+                    <button class="plus" onclick="buttonClick('\n')">enter</button>
+                </div>
+
+            </div><!--for second column-->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
